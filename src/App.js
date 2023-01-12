@@ -8,8 +8,8 @@ export default function App() {
       
       <Weather/>
         <footer className="footer-content">
-          The page was coded by <a href="https://github.com/monaSeddighi">Mona Seddighi</a> and it is an <a
-          href="https://github.com/monaSeddighi/my-homework-project" target="_blank" rel="noopener noreferrer">
+          The page was coded by <a href="https://github.com/monaSeddighi/my-homework-project">Mona Seddighi</a> and it is an <a
+          href="https://github.com/monaSeddighi" target="_blank" rel="noopener noreferrer">
           open-source on GitHub
         </a>
       </footer>
