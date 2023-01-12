@@ -30,19 +30,21 @@ list-style:none;
   margin-right: 10px;
   display: inline-block;
   width: 64px;
+  margin-top: 8px;
 }
 .Weather .temperature {
  font-weight: 400;
 color: rgb(33,33,33);
 font-size: 64px;
- line-height: 64px;
+ line-height: 54px;
+margin-top: 8px;
 }
 .Weather .unit{
 color: rgb(33, 33, 33);
 font-size: 16px;
 font-weight: 400;
 position: relative;
-top: -34px;
 line-height:1;
+line-height: 34px;
 margin-left:5px;
 } 
