@@ -25,28 +25,27 @@ city:response.data.name
                  <div className="col-3"><input type="submit" value="Search" className="btn btn-primary w-100"/></div>
                 </div>
             </form>
-            <h1>New York</h1>
+            <h1>{weatherData.city}</h1>
             <ul>
-                <li>Thursday 02:00</li>
-                <li>Cloudy</li>
+                <li>{weatherData.date}</li>
+                <li className="text-capitilize">{weatherData.description}</li>
             </ul>
             <div className="row">
  <div className="col-6">
 <div className="d-flex">
- <img src="iconUrl" alt="weather forecast" />
-       <span className="temperature">{Math.round(temperature)}</span> 
+ <img src={weatherData.iconUrl} alt={weatherData.description} />
+       <span className="temperature">{Math.round(weatherData.temperature)}</span> 
      <span className="unit">°C</span>
   </div>
   </div>
 
-                    <div className="col-6"> 
-                    <ul>
-                        <li> Precipitation: 2%  </li>
-                    <li> Humidity: 67%  </li>
-                    <li> Wind: 14 km/h  </li>
-                    </ul>
-                    </div>
-            </div>
+ <div className="col-6"> 
+ <ul>
+<li> Humidity: {weatherData.humidity}%  </li>
+<li> Wind: {Math.round(weatherData.wind)} km/h  </li>
+ </ul>
+ </div>
+  </div>
         </div>
     )
    } else{
