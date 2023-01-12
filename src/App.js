@@ -7,7 +7,7 @@ export default function App() {
             <div className="container">
       
       <Weather/>
-        <footer>
+        <footer className="footer-content">
           The page was coded by <a href="https://github.com/monaSeddighi">Mona Seddighi</a> and it is an <a
           href="https://github.com/monaSeddighi/my-homework-project" target="_blank" rel="noopener noreferrer">
           open-source on GitHub
