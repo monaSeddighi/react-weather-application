@@ -1,5 +1,5 @@
 import React from "react";
-import './App.css';
+import './App.css'
 import Weather from "./Weather"
 export default function App() {
   return (
@@ -8,9 +8,8 @@ export default function App() {
       
       <Weather/>
         <footer className="footer-content">
-          The page was coded by <a href="https://github.com/monaSeddighi/my-homework-project">Mona Seddighi</a> and it is an <a
-          href="https://github.com/monaSeddighi" target="_blank" rel="noopener noreferrer">
-          open-source on GitHub
+          The page was coded by {" "}
+          <a href="https://github.com/monaSeddighi/my-homework-project">Mona Seddighi</a> and it is an <a href="https://github.com/monaSeddighi" target="_blank" rel="noopener noreferrer">{" "}open-source on GitHub
         </a>
       </footer>
       </div>
