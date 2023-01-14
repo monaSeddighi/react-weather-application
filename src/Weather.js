@@ -5,7 +5,7 @@ export default function Weather(){
     const [weatherData, setWeatherData]=useState({ready:false});
     function handleResponse(response){
 setWeatherData({
-ready:true,
+ready:true, 
 temperature: response.data.main.temp,
 humidity: response.data.main.humidity,
 date:"Wednesday 07:00",
@@ -30,7 +30,7 @@ city:response.data.name
                 <li>{weatherData.date}</li>
                 <li className="text-capitilize">{weatherData.description}</li>
             </ul>
-            <div className="row">
+            <div className="row mt-3">
  <div className="col-6">
 <div className="d-flex">
  <img src={weatherData.iconUrl} alt={weatherData.description} />
