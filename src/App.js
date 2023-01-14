@@ -6,10 +6,10 @@ export default function App() {
     <div className="App">
             <div className="container">
       
-      <Weather/>
+      <Weather defaultCity="New York"/>
         <footer className="footer-content">
-          The page was coded by {" "}
-          <a href="https://github.com/monaSeddighi/my-homework-project">Mona Seddighi</a> and it is an <a href="https://github.com/monaSeddighi" target="_blank" rel="noopener noreferrer">{" "}open-source on GitHub
+          The project was coded by {" "}
+          <a href="https://github.com/monaSeddighi/my-homework-project">Mona Seddighi</a> and is <a href="https://github.com/monaSeddighi" target="_blank" rel="noopener noreferrer">{" "}open-sourced on GitHub
         </a>
       </footer>
       </div>
