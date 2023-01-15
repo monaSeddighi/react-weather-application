@@ -14,6 +14,7 @@ iconUrl:"https://ssl.gstatic.com/onebox/weather/64/cloudy.png",
 wind:response.data.wind.speed,
 city:response.data.name
 });
+
     }
    if(weatherData.ready){
      return(
