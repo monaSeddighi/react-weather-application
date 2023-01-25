@@ -17,8 +17,14 @@ wind:response.data.wind.speed,
 city:response.data.name
 });
     }
+    function search(){
+ const apiKey="5b74d10f3ef03caf1ac640b557c288c3";
+    let apiUrl=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(handleResponse);
+    }
     function handleSubmit(event){
         event.preventDefault()
+        search();
     }
     function handleCityChange(event){
        setCity(event.target.value);
@@ -39,9 +45,7 @@ city:response.data.name
         </div>
     )
    } else{
-    const apiKey="5b74d10f3ef03caf1ac640b557c288c3";
-    let apiUrl=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-    axios.get(apiUrl).then(handleResponse);
-return "in progress..";
+   search()
+   return "in progress..";
 }
    }
