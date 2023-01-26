@@ -11,8 +11,8 @@ ready:true,
 temperature: response.data.main.temp,
 humidity: response.data.main.humidity,
 date: new Date(response.data.dt*1000),
-description:response.data.weather[0].descrption,
-iconUrl:"https://ssl.gstatic.com/onebox/weather/64/cloudy.png",
+description:response.data.weather[0].description,
+iconUrl:`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
 wind:response.data.wind.speed,
 city:response.data.name
 });
