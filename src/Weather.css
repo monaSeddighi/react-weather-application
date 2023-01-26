@@ -26,10 +26,9 @@ text-align: left;
 list-style:none;
 }
 .Weather canvas {
-  height: 64px;
   margin-right: 10px;
   display: inline-block;
-  width: 64px;
+ 
   margin-top: 8px;
 }
 .Weather .temperature {
