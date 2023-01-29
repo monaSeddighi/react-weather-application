@@ -20,7 +20,7 @@ city:response.data.name
 });
     }
     function search(){
- const apiKey="5b74d10f3ef03caf1ac640b557c288c3";
+ const apiKey="44dcf1afc08b2ad7e7464bd1140e770b";
     let apiUrl=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
     }
